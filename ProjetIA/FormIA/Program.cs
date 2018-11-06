@@ -11,7 +11,7 @@ namespace FormIA
     static class Program
     {
         //chemin de cration du fichier XML, ici dans le dossier du projet Visual Studio
-        private const string CHEMIN = "Questionnaire.xml";
+        private const string _CHEMIN = "Questionnaire.xml";
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
@@ -25,9 +25,9 @@ namespace FormIA
             //fichier XML
             Questions questions = null;
 
-            if (File.Exists(CHEMIN))
+            if (File.Exists(_CHEMIN))
             {
-                questions = Questions.Charger(CHEMIN);
+                questions = Questions.Charger(_CHEMIN);
             }
             else
             {
@@ -38,7 +38,7 @@ namespace FormIA
             questions.Add(new Question(1, "Dans le cadre d'un graphe non orienté, la matrice d'adjacence est :", new Reponse(1, "Asymétrique", false), new Reponse(2,"Symétrique",true), new Reponse(3, "Ne peut pas être déterminée",false ), new Reponse(4, "Similaire à celle d'un graphe orienté", false)));
 
             //Sauvegarde
-            questions.Enregistrer(CHEMIN);
+            questions.Enregistrer(_CHEMIN);
         }
     }
 }
