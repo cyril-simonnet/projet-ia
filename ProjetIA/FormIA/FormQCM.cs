@@ -15,6 +15,7 @@ namespace FormIA
         private const string _CHEMIN = "Questionnaire.xml";
         int i = 0;
         int scoreFinal = 0;
+        Random random = new Random(20);
 
         public FormQCM()
         {
