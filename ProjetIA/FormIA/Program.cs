@@ -8,15 +8,16 @@ using System.Xml.Serialization;
 
 namespace FormIA
 {
-    static class Program
+    public static class Program
     {
         //chemin de cration du fichier XML, ici dans le dossier du projet Visual Studio
         private const string _CHEMIN = "Questionnaire.xml";
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
+        
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             //fichier XML
             Questions questions = null;
