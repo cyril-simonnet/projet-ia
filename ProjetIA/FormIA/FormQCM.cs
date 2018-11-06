@@ -22,21 +22,22 @@ namespace FormIA
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            i++;
-            //étape 1 : enregistrer la réponse donnée
-
-            //étape 2 : afficher sur ce même form une nouvelle question en random
-            Questions
-
-            //étape 3 : au 20ème click, faire apparaître le form associé
-            if (réponse correcte)
+            if (i<20)
             {
-                scoreFinal++;
+                FormQCM formQCM = new FormQCM();
+                formQCM.Show();
+            }
+            else
+            {
+                FormNoteFinale formNoteFinale = new FormNoteFinale();
+                formNoteFinale.Show();
             }
 
-            FormNoteFinale formNoteFinale = new FormNoteFinale();
-            formNoteFinale.Show();
-           
+            i++;
+
+            //étape 1 : enregistrer la réponse donnée
+            //étape 2 : afficher sur ce même form une nouvelle question en random
+            //étape 3 : au 20ème click, faire apparaître le form associé        
         }
     }
 }
