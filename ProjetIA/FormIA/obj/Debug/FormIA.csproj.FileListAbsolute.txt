@@ -10,3 +10,6 @@ C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.ex
 C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.pdb
 C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
 C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.FormNoteFinale.resources
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe.config
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.exe
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.pdb
