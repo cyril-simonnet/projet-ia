@@ -38,9 +38,10 @@
             // 
             this.lblTxtScore.AutoSize = true;
             this.lblTxtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblTxtScore.Location = new System.Drawing.Point(79, 71);
+            this.lblTxtScore.Location = new System.Drawing.Point(59, 58);
+            this.lblTxtScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTxtScore.Name = "lblTxtScore";
-            this.lblTxtScore.Size = new System.Drawing.Size(414, 29);
+            this.lblTxtScore.Size = new System.Drawing.Size(321, 25);
             this.lblTxtScore.TabIndex = 0;
             this.lblTxtScore.Text = "Vous avez obtenu le score suivant :";
             // 
@@ -49,17 +50,19 @@
             this.lblScore.AutoSize = true;
             this.lblScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblScore.Location = new System.Drawing.Point(282, 154);
+            this.lblScore.Location = new System.Drawing.Point(212, 125);
+            this.lblScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(2, 41);
+            this.lblScore.Size = new System.Drawing.Size(2, 33);
             this.lblScore.TabIndex = 1;
             // 
             // btnQuit
             // 
             this.btnQuit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnQuit.Location = new System.Drawing.Point(215, 454);
+            this.btnQuit.Location = new System.Drawing.Point(161, 369);
+            this.btnQuit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(134, 35);
+            this.btnQuit.Size = new System.Drawing.Size(100, 28);
             this.btnQuit.TabIndex = 6;
             this.btnQuit.Text = "Quitter";
             this.btnQuit.UseVisualStyleBackColor = true;
@@ -69,21 +72,23 @@
             // 
             this.lblAbientot.AutoSize = true;
             this.lblAbientot.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblAbientot.Location = new System.Drawing.Point(104, 342);
+            this.lblAbientot.Location = new System.Drawing.Point(78, 278);
+            this.lblAbientot.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAbientot.Name = "lblAbientot";
-            this.lblAbientot.Size = new System.Drawing.Size(369, 26);
+            this.lblAbientot.Size = new System.Drawing.Size(307, 22);
             this.lblAbientot.TabIndex = 0;
             this.lblAbientot.Text = "A bientôt pour retanter votre chance !";
             // 
             // FormNoteFinale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 501);
+            this.ClientSize = new System.Drawing.Size(426, 407);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblAbientot);
             this.Controls.Add(this.lblTxtScore);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormNoteFinale";
             this.Text = "Résultat";
             this.ResumeLayout(false);
