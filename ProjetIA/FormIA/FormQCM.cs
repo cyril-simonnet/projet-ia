@@ -33,30 +33,28 @@ namespace FormIA
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Random random = new Random();
-            int randomChiffre = random.Next(23);
-
-            Questions questions = new Questions();
-            questions = Questions.Charger(_CHEMIN);
-            lblQ.Text = questions[randomChiffre].Intitule;
-            lblAns1.Text = questions[randomChiffre].Reponse1.Intitule;
-            lblAns2.Text = questions[randomChiffre].Reponse2.Intitule;
-            lblAns3.Text = questions[randomChiffre].Reponse3.Intitule;
-            lblAns4.Text = questions[randomChiffre].Reponse4.Intitule;
-
             if (i<20)
             {
-                FormQCM formQCM = new FormQCM();
-                formQCM.Show();
+                Random random = new Random();
+                int randomChiffre = random.Next(23);
+
+                Questions questions = new Questions();
+                questions = Questions.Charger(_CHEMIN);
+                lblQ.Text = questions[randomChiffre].Intitule;
+                lblAns1.Text = questions[randomChiffre].Reponse1.Intitule;
+                lblAns2.Text = questions[randomChiffre].Reponse2.Intitule;
+                lblAns3.Text = questions[randomChiffre].Reponse3.Intitule;
+                lblAns4.Text = questions[randomChiffre].Reponse4.Intitule;
+
+                i++;
+                //scoreFinal++;
             }
+            
             else
             {
                 FormNoteFinale formNoteFinale = new FormNoteFinale();
                 formNoteFinale.Show();
             }
-
-            i++;
-            scoreFinal++;
 
             //étape 1 : enregistrer la réponse donnée
             //étape 2 : afficher sur ce même form une nouvelle question en random
