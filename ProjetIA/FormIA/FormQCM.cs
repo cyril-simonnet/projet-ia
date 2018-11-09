@@ -71,8 +71,9 @@ namespace FormIA
             
             else
             {
-                FormNoteFinale formNoteFinale = new FormNoteFinale();
-                formNoteFinale.Show();
+                MessageBox.Show("Votre score final est de : "+scoreFinal+", bravo !");
+                //FormNoteFinale formNoteFinale = new FormNoteFinale();
+                //formNoteFinale.Show();
             }
 
             //étape 1 : enregistrer la réponse donnée
