@@ -72,14 +72,7 @@ namespace FormIA
             else
             {
                 MessageBox.Show("Votre score final est de : "+scoreFinal+", bravo !");
-                //FormNoteFinale formNoteFinale = new FormNoteFinale();
-                //formNoteFinale.Show();
             }
-
-            //étape 1 : enregistrer la réponse donnée
-            //étape 2 : afficher sur ce même form une nouvelle question en random --- OK
-            //étape 3 : au 20ème click, faire apparaître le form associé --- OK
-            //étape 4 : sur ce forme de résutlat, afficher le bon score
         }
     }
 }
