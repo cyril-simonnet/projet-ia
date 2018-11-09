@@ -1,39 +1,12 @@
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\bin\Debug\FormIA.exe.config
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\bin\Debug\FormIA.exe
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\bin\Debug\FormIA.pdb
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.csprojResolveAssemblyReference.cache
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.FormIA.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.FormQCM.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.Properties.Resources.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.csproj.GenerateResource.Cache
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.exe
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.pdb
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\ProjetIA\FormIA\obj\Debug\FormIA.FormNoteFinale.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe.config
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.exe
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.pdb
-<<<<<<< HEAD
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe.config
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.pdb
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csprojResolveAssemblyReference.cache
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormIA.resources
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormNoteFinale.resources
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormQCM.resources
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.Properties.Resources.resources
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csproj.GenerateResource.Cache
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.exe
-C:\Users\eguihard\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.pdb
-=======
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.pdb
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csprojResolveAssemblyReference.cache
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormIA.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormNoteFinale.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormQCM.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.Properties.Resources.resources
-C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csproj.GenerateResource.Cache
->>>>>>> 4fb4771df97ca5e6d1819429d7880c7f77b6efee
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe.config
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.pdb
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormIA.resources
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormNoteFinale.resources
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormQCM.resources
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.Properties.Resources.resources
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csproj.GenerateResource.Cache
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csproj.CoreCompileInputs.cache
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.exe
+C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.pdb

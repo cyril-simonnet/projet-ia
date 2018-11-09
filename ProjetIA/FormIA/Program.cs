@@ -54,6 +54,7 @@ namespace FormIA
             // lancement du form
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new FormIA());
 
             
