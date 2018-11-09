@@ -18,14 +18,10 @@ namespace FormIA
 
         public FormQCM()
         {
-            InitializeComponent();           
-        }
-
-        private void FormQCM_Load(object sender, EventArgs e)
-        {
             Random random = new Random();
             int randomChiffre = random.Next(23);
 
+            InitializeComponent();
             Questions questions = new Questions();
             questions = Questions.Charger(_CHEMIN);
             lblQ.Text = questions[randomChiffre].Intitule;
