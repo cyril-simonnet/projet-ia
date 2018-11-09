@@ -15,6 +15,7 @@ namespace FormIA
         public FormNoteFinale()
         {
             InitializeComponent();
+            lblScore.Text = "3"; //doit être le score filnal du formQCM, comment le récupérer.. ?
         }
 
         private void btnQuit_Click(object sender, EventArgs e)

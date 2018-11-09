@@ -13,8 +13,8 @@ namespace FormIA
     public partial class FormQCM : Form
     {
         private const string _CHEMIN = "Questionnaire.xml";
-        int i = 0;
-        int scoreFinal = 0;
+        private int i = 0;
+        public int scoreFinal = 0;
 
         public FormQCM()
         {
@@ -47,7 +47,26 @@ namespace FormIA
                 lblAns4.Text = questions[randomChiffre].Reponse4.Intitule;
 
                 i++;
-                //scoreFinal++;
+
+                if((rbAns1.Checked == true) && (questions[randomChiffre].Reponse1.Value == true))
+                {
+                    scoreFinal++;
+                }
+
+                else if ((rbAns2.Checked == true) && (questions[randomChiffre].Reponse2.Value == true))
+                {
+                    scoreFinal++;
+                }
+
+                else if ((rbAns3.Checked == true) && (questions[randomChiffre].Reponse3.Value == true))
+                {
+                    scoreFinal++;
+                }
+
+                else if ((rbAns4.Checked == true) && (questions[randomChiffre].Reponse4.Value == true))
+                {
+                    scoreFinal++;
+                }
             }
             
             else
@@ -57,8 +76,9 @@ namespace FormIA
             }
 
             //étape 1 : enregistrer la réponse donnée
-            //étape 2 : afficher sur ce même form une nouvelle question en random
-            //étape 3 : au 20ème click, faire apparaître le form associé        
+            //étape 2 : afficher sur ce même form une nouvelle question en random --- OK
+            //étape 3 : au 20ème click, faire apparaître le form associé --- OK
+            //étape 4 : sur ce forme de résutlat, afficher le bon score
         }
     }
 }
