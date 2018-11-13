@@ -11,3 +11,14 @@ C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.cspro
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.exe
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.pdb
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csprojResolveAssemblyReference.cache
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe.config
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.exe
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.pdb
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.pdb
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csprojResolveAssemblyReference.cache
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormIA.resources
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormQCM.resources
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.Properties.Resources.resources
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csproj.GenerateResource.Cache
