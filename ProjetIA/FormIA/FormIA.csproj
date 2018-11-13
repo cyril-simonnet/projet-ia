@@ -58,12 +58,6 @@
     <Compile Include="FormIA.Designer.cs">
       <DependentUpon>FormIA.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNoteFinale.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormNoteFinale.Designer.cs">
-      <DependentUpon>FormNoteFinale.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormQCM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,9 +76,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormIA.resx">
       <DependentUpon>FormIA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormNoteFinale.resx">
-      <DependentUpon>FormNoteFinale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormQCM.resx">
       <DependentUpon>FormQCM.cs</DependentUpon>
