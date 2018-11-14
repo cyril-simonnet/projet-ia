@@ -116,7 +116,7 @@
             // 
             // bt_ClosedOpenRead
             // 
-            this.bt_ClosedOpenRead.Location = new System.Drawing.Point(401, 360);
+            this.bt_ClosedOpenRead.Location = new System.Drawing.Point(401, 365);
             this.bt_ClosedOpenRead.Margin = new System.Windows.Forms.Padding(3, 3, 3, 19);
             this.bt_ClosedOpenRead.Name = "bt_ClosedOpenRead";
             this.bt_ClosedOpenRead.Size = new System.Drawing.Size(80, 23);
@@ -127,10 +127,10 @@
             // 
             // pb_graph
             // 
-            this.pb_graph.Location = new System.Drawing.Point(49, 88);
+            this.pb_graph.Location = new System.Drawing.Point(37, 73);
             this.pb_graph.Margin = new System.Windows.Forms.Padding(2);
             this.pb_graph.Name = "pb_graph";
-            this.pb_graph.Size = new System.Drawing.Size(400, 130);
+            this.pb_graph.Size = new System.Drawing.Size(417, 130);
             this.pb_graph.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_graph.TabIndex = 12;
             this.pb_graph.TabStop = false;
@@ -158,7 +158,7 @@
             // 
             this.lbl_Instructions.AutoSize = true;
             this.lbl_Instructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Instructions.Location = new System.Drawing.Point(33, 19);
+            this.lbl_Instructions.Location = new System.Drawing.Point(97, 45);
             this.lbl_Instructions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Instructions.Name = "lbl_Instructions";
             this.lbl_Instructions.Size = new System.Drawing.Size(0, 13);
@@ -166,7 +166,7 @@
             // 
             // btnSearchT
             // 
-            this.btnSearchT.Location = new System.Drawing.Point(23, 360);
+            this.btnSearchT.Location = new System.Drawing.Point(199, 365);
             this.btnSearchT.Name = "btnSearchT";
             this.btnSearchT.Size = new System.Drawing.Size(119, 23);
             this.btnSearchT.TabIndex = 18;
@@ -176,12 +176,14 @@
             // 
             // lblBienvenueDij
             // 
-            this.lblBienvenueDij.AutoSize = true;
-            this.lblBienvenueDij.Location = new System.Drawing.Point(211, 19);
+            this.lblBienvenueDij.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblBienvenueDij.Location = new System.Drawing.Point(12, 9);
             this.lblBienvenueDij.Name = "lblBienvenueDij";
-            this.lblBienvenueDij.Size = new System.Drawing.Size(64, 13);
+            this.lblBienvenueDij.Size = new System.Drawing.Size(475, 36);
             this.lblBienvenueDij.TabIndex = 19;
-            this.lblBienvenueDij.Text = "Bienvenue !";
+            this.lblBienvenueDij.Text = "Bienvenue dans cet algorithme de Dijkstra ! Essayez de trouver le meilleur chemin" +
+    ", étape par étape...";
+            this.lblBienvenueDij.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormDijkstra
             // 
