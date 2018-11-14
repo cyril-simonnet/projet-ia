@@ -74,7 +74,9 @@ namespace FormIA
             
             else
             {
-                MessageBox.Show("Votre score final est de "+scoreFinal+" !","Résultat final");
+                string message = "Votre score final est de " + scoreFinal + " !";
+                string caption = "Résultat final";
+                MessageBox.Show(message,caption, MessageBoxButtons.AbortRetryIgnore);
             }
         }
     }
