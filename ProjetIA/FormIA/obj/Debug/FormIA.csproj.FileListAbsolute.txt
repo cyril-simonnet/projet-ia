@@ -21,3 +21,5 @@ C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormSearchTree.resources
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csprojResolveAssemblyReference.cache
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
+C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormSearchTree.resources

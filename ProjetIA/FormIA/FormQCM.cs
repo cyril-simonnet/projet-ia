@@ -74,9 +74,23 @@ namespace FormIA
             
             else
             {
-                string message = "Votre score final est de " + scoreFinal + " !";
+                string message = "Votre score final est de " + scoreFinal + " !\nSi vous voulez recommencer, cliquez sur 'Recommencer'.\nSi vous voulez retourner à la page d'accueil, cliquez sur 'Abandonner'.";
                 string caption = "Résultat final";
-                MessageBox.Show(message,caption, MessageBoxButtons.AbortRetryIgnore);
+                var result = MessageBox.Show(message,caption, MessageBoxButtons.AbortRetryIgnore);
+                if(result == DialogResult.Abort)
+                {
+                    this.Close();
+                }
+                else if(result == DialogResult.Retry)
+                {
+                    this.Close();
+                    FormQCM qcm = new FormQCM();
+                    qcm.Show();
+                }
+                else if(result == DialogResult.Ignore)
+                {
+                    this.Close();
+                }
             }
         }
     }
