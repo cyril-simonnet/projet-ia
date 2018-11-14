@@ -33,11 +33,14 @@ namespace FormIA
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            //int[] questionsPosées = [déterminer la taille de la liste];
+
             if (i<20)
             {
                 Random random = new Random();
                 int randomChiffre = random.Next(23);
-
+                //questionsPosées[i] = randomChiffre;
+                
                 Questions questions = new Questions();
                 questions = Questions.Charger(_CHEMIN);
                 lblQ.Text = questions[randomChiffre].Intitule;
@@ -71,7 +74,7 @@ namespace FormIA
             
             else
             {
-                MessageBox.Show("Votre score final est de : "+scoreFinal+", bravo !");
+                MessageBox.Show("Votre score final est de "+scoreFinal+" !","Résultat final");
             }
         }
     }

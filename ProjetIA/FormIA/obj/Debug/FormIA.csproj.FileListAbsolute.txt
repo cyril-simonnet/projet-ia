@@ -3,7 +3,6 @@ C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.pdb
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormDijkstra.resources
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormIA.resources
-C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormNoteFinale.resources
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormQCM.resources
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.Properties.Resources.resources
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csproj.GenerateResource.Cache
