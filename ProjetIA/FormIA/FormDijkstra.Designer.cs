@@ -39,10 +39,10 @@
             this.bt_ClosedOpenRead = new System.Windows.Forms.Button();
             this.pb_graph = new System.Windows.Forms.PictureBox();
             this.lbl_Correctness = new System.Windows.Forms.Label();
-            this.lbl_IndicationsInput = new System.Windows.Forms.Label();
             this.lbl_Instructions = new System.Windows.Forms.Label();
             this.btnSearchT = new System.Windows.Forms.Button();
             this.lblBienvenueDij = new System.Windows.Forms.Label();
+            this.lbl_IndicationsInput = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_graph)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,15 +145,6 @@
             this.lbl_Correctness.Size = new System.Drawing.Size(0, 13);
             this.lbl_Correctness.TabIndex = 13;
             // 
-            // lbl_IndicationsInput
-            // 
-            this.lbl_IndicationsInput.AutoSize = true;
-            this.lbl_IndicationsInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_IndicationsInput.Location = new System.Drawing.Point(275, 205);
-            this.lbl_IndicationsInput.Name = "lbl_IndicationsInput";
-            this.lbl_IndicationsInput.Size = new System.Drawing.Size(0, 13);
-            this.lbl_IndicationsInput.TabIndex = 14;
-            // 
             // lbl_Instructions
             // 
             this.lbl_Instructions.AutoSize = true;
@@ -184,6 +175,15 @@
             this.lblBienvenueDij.Text = "Bienvenue dans cet algorithme de Dijkstra ! Essayez de trouver le meilleur chemin" +
     ", étape par étape...";
             this.lblBienvenueDij.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_IndicationsInput
+            // 
+            this.lbl_IndicationsInput.AutoSize = true;
+            this.lbl_IndicationsInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_IndicationsInput.Location = new System.Drawing.Point(275, 205);
+            this.lbl_IndicationsInput.Name = "lbl_IndicationsInput";
+            this.lbl_IndicationsInput.Size = new System.Drawing.Size(0, 13);
+            this.lbl_IndicationsInput.TabIndex = 14;
             // 
             // FormDijkstra
             // 
@@ -228,9 +228,9 @@
         private System.Windows.Forms.Button bt_ClosedOpenRead;
         private System.Windows.Forms.PictureBox pb_graph;
         private System.Windows.Forms.Label lbl_Correctness;
-        private System.Windows.Forms.Label lbl_IndicationsInput;
         private System.Windows.Forms.Label lbl_Instructions;
         private System.Windows.Forms.Button btnSearchT;
         private System.Windows.Forms.Label lblBienvenueDij;
+        private System.Windows.Forms.Label lbl_IndicationsInput;
     }
 }

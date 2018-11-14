@@ -24,8 +24,8 @@ namespace FormIA
         }
 
         public void AddLbDijkstraSolvedItem(string item) { lb_DijkstraSolved.Items.Add(item); }
-        public void AddLbFermesGrapheItem(string item) { lb_FermesGraphe.Items.Add(item); }
-        public void AddLbOuvertsGrapheItem(string item) { lb_OuvertsGraphe.Items.Add(item); }
+        //public void AddLbFermesGrapheItem(string item) { lb_FermesGraphe.Items.Add(item); }
+        //public void AddLbOuvertsGrapheItem(string item) { lb_OuvertsGraphe.Items.Add(item); }
         public TreeView GetTv() { return tv_DijkstraSolved; }
 
     }

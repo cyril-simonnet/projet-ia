@@ -35,7 +35,7 @@ namespace FormIA
             DijkstraASolverIterationDefiner();
             lbl_Instructions.Text = "Remplissez à la main pour aller du point " + ((char)(this.numInitial + 65)).ToString() + " au point " + ((char)(numFinal + 65)).ToString() + ".";
             tb_OpenedPrevious.Text = g.L_OuvertsEvolution[0][0];
-            lbl_IndicationsInput.Text = "Veuillez remplir l'étape " + (this.iteInput + 1) + " de l'algorithme :";
+            lbl_IndicationsInput.Text = "Etape " + (this.iteInput + 1) + " de l'algorithme :";
             this.ActiveControl = tb_ClosedRead;
         }
 
@@ -115,7 +115,7 @@ namespace FormIA
             {
                 lbl_Correctness.Text = ""; System.Threading.Thread.Sleep(200);
                 lbl_Correctness.Text = "Étape " + (this.iteInput+1) + " correcte !";
-                lbl_IndicationsInput.Text = "Veuillez remplir l'étape " + (this.iteInput+2) + " de l'algorithme :";
+                lbl_IndicationsInput.Text = "Etape " + (this.iteInput+2) + " de l'algorithme :";
                 iteInput++;
                 tb_ClosedPrevious.Text = tb_ClosedRead.Text;
                 tb_OpenedPrevious.Text = tb_OpenedRead.Text;
@@ -198,21 +198,6 @@ namespace FormIA
             }
 
             this.g.GetSearchTree(answersForm.GetTv());
-
-            string txt;
-            for (int i = 0; i < this.g.L_FermesEvolution.Count; i++)
-            {
-                txt = "(" + (i+1).ToString() + ") : { ";
-                foreach (string el in this.g.L_FermesEvolution[i]) { txt += (el + " "); } txt += "}";
-                answersForm.AddLbFermesGrapheItem(txt);
-            }
-            for (int i = 0; i < this.g.L_OuvertsEvolution.Count; i++)
-            {
-                txt = "(" + (i + 1).ToString() + ") : { ";
-                foreach (string el in this.g.L_OuvertsEvolution[i]) { txt += (el + " "); }
-                txt += "}";
-                answersForm.AddLbOuvertsGrapheItem(txt);
-            }
         }
 
         public void SetIterationInputGoal(int ite) { this.iteInputGoal = ite; }
