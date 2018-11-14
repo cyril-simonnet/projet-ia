@@ -116,10 +116,10 @@
             // 
             // bt_ClosedOpenRead
             // 
-            this.bt_ClosedOpenRead.Location = new System.Drawing.Point(401, 365);
+            this.bt_ClosedOpenRead.Location = new System.Drawing.Point(382, 365);
             this.bt_ClosedOpenRead.Margin = new System.Windows.Forms.Padding(3, 3, 3, 19);
             this.bt_ClosedOpenRead.Name = "bt_ClosedOpenRead";
-            this.bt_ClosedOpenRead.Size = new System.Drawing.Size(80, 23);
+            this.bt_ClosedOpenRead.Size = new System.Drawing.Size(99, 23);
             this.bt_ClosedOpenRead.TabIndex = 11;
             this.bt_ClosedOpenRead.Text = "Valider";
             this.bt_ClosedOpenRead.UseVisualStyleBackColor = true;
@@ -157,11 +157,11 @@
             // 
             // btnSearchT
             // 
-            this.btnSearchT.Location = new System.Drawing.Point(199, 365);
+            this.btnSearchT.Location = new System.Drawing.Point(169, 366);
             this.btnSearchT.Name = "btnSearchT";
-            this.btnSearchT.Size = new System.Drawing.Size(119, 23);
+            this.btnSearchT.Size = new System.Drawing.Size(169, 23);
             this.btnSearchT.TabIndex = 18;
-            this.btnSearchT.Text = "Vue Search Tree";
+            this.btnSearchT.Text = "Réponses Vue Search Tree";
             this.btnSearchT.UseVisualStyleBackColor = true;
             this.btnSearchT.Click += new System.EventHandler(this.btnSearchT_Click);
             // 
