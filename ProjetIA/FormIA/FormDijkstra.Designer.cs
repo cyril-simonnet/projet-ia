@@ -149,7 +149,7 @@
             // 
             this.lbl_Instructions.AutoSize = true;
             this.lbl_Instructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Instructions.Location = new System.Drawing.Point(97, 45);
+            this.lbl_Instructions.Location = new System.Drawing.Point(166, 45);
             this.lbl_Instructions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Instructions.Name = "lbl_Instructions";
             this.lbl_Instructions.Size = new System.Drawing.Size(0, 13);

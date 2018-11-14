@@ -33,7 +33,7 @@ namespace FormIA
             this.answersForm = new FormSearchTree(); // Créé un nouveau formSearchTree
             ReadGraphFile();
             DijkstraASolverIterationDefiner();
-            lbl_Instructions.Text = "Remplissez à la main pour aller du point " + ((char)(this.numInitial + 65)).ToString() + " au point " + ((char)(numFinal + 65)).ToString() + ".";
+            lbl_Instructions.Text = "Allez du point A au point E.";
             tb_OpenedPrevious.Text = g.L_OuvertsEvolution[0][0];
             lbl_IndicationsInput.Text = "Etape " + (this.iteInput + 1) + " de l'algorithme :";
             this.ActiveControl = tb_ClosedRead;
