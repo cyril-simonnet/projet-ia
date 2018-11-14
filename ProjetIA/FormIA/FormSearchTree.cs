@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FormIA
 {
-    public partial class DijkstraAFormAnswers : Form
+    public partial class FormSearchTree : Form
     {
-        public DijkstraAFormAnswers()
+        public FormSearchTree()
         {
             InitializeComponent();
         }

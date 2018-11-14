@@ -25,7 +25,7 @@ namespace FormIA
 
         private void btnDijkstra_Click(object sender, EventArgs e)
         {
-            DijkstraAForm dijkstra = new DijkstraAForm();
+            FormDijkstra dijkstra = new FormDijkstra();
             dijkstra.Show();
         }
 

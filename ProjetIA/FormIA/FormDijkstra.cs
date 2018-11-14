@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace FormIA
 {
-    public partial class DijkstraAForm : Form
+    public partial class FormDijkstra : Form
     {
         static public int[,] matrice;
         static public int nbNodes;
@@ -21,16 +21,16 @@ namespace FormIA
         private int iteInput = 1;
         private int iteInputGoal = -1;
         private SearchTree g;
-        private DijkstraAFormAnswers answersForm;
+        private FormSearchTree answersForm;
 
-        public DijkstraAForm()
+        public FormDijkstra()
         {
             InitializeComponent();
         }
 
         private void DijkstraAForm_Load(object sender, EventArgs e)
         {
-            this.answersForm = new DijkstraAFormAnswers(); // CREER UN NOUVEAU FORM DEPUIS AJOUTER POUR AFFICHER LES REPONSES A DIJKSTRA, LE DESIGNER ET AJOUTER LES INFOS SOUS LE SEP DANS CE FORM.
+            this.answersForm = new FormSearchTree(); // CREER UN NOUVEAU FORM DEPUIS AJOUTER POUR AFFICHER LES REPONSES A DIJKSTRA, LE DESIGNER ET AJOUTER LES INFOS SOUS LE SEP DANS CE FORM.
             ReadGraphFile();
             DijkstraASolverIterationDefiner();
             lbl_Instructions.Text = "Remplissez à la main l'algorithme de Dijkstra pour aller du point " + ((char)(this.numInitial + 65)).ToString() + " au point " + ((char)(numFinal + 65)).ToString() + ".";
@@ -246,11 +246,9 @@ namespace FormIA
             }
         }
 
-        private void bt_Answers_Click(object sender, EventArgs e)
+        private void btnSearchT_Click(object sender, EventArgs e)
         {
             this.answersForm.Show();
         }
-
-
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace FormIA
 {
-    partial class DijkstraAFormAnswers
+    partial class FormSearchTree
     {
         /// <summary>
         /// Required designer variable.

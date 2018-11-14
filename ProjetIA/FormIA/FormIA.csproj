@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DijkstraAForm.cs">
+    <Compile Include="FormDijkstra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DijkstraAForm.Designer.cs">
-      <DependentUpon>DijkstraAForm.cs</DependentUpon>
+    <Compile Include="FormDijkstra.Designer.cs">
+      <DependentUpon>FormDijkstra.cs</DependentUpon>
     </Compile>
-    <Compile Include="DijkstraAFormAnswers.cs">
+    <Compile Include="FormSearchTree.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DijkstraAFormAnswers.Designer.cs">
-      <DependentUpon>DijkstraAFormAnswers.cs</DependentUpon>
+    <Compile Include="FormSearchTree.Designer.cs">
+      <DependentUpon>FormSearchTree.cs</DependentUpon>
     </Compile>
     <Compile Include="FormIA.cs">
       <SubType>Form</SubType>
@@ -78,11 +78,11 @@
     <Compile Include="Reponse.cs" />
     <Compile Include="SearchTree.cs" />
     <Compile Include="SpecificNode.cs" />
-    <EmbeddedResource Include="DijkstraAForm.resx">
-      <DependentUpon>DijkstraAForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormDijkstra.resx">
+      <DependentUpon>FormDijkstra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DijkstraAFormAnswers.resx">
-      <DependentUpon>DijkstraAFormAnswers.cs</DependentUpon>
+    <EmbeddedResource Include="FormSearchTree.resx">
+      <DependentUpon>FormSearchTree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormIA.resx">
       <DependentUpon>FormIA.cs</DependentUpon>

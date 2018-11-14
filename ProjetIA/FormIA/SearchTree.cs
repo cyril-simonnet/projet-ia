@@ -58,7 +58,7 @@ namespace FormIA
             return nodes;
         }
 
-        public List<GenericNode> RechercheSolutionAEtoile(GenericNode N0, DijkstraAForm form)
+        public List<GenericNode> RechercheSolutionAEtoile(GenericNode N0, FormDijkstra form)
         {
             int ite = 1;
             L_Ouverts = new List<GenericNode>();

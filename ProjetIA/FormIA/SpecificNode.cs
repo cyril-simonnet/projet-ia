@@ -18,21 +18,21 @@ namespace FormIA
         public override double GetArcCost(GenericNode N2)
         {
             SpecificNode N2bis = (SpecificNode)N2;
-            return DijkstraAForm.matrice[numero, N2bis.numero];
+            return FormDijkstra.matrice[numero, N2bis.numero];
         }
 
         public override bool EndState()
         {
-            return (numero == DijkstraAForm.numFinal);
+            return (numero == FormDijkstra.numFinal);
         }
 
         public override List<GenericNode> GetListSucc()
         {
             List<GenericNode> lsucc = new List<GenericNode>();
 
-            for (int i = 0; i < DijkstraAForm.nbNodes; i++)
+            for (int i = 0; i < FormDijkstra.nbNodes; i++)
             {
-                if (DijkstraAForm.matrice[numero, i] != -1)
+                if (FormDijkstra.matrice[numero, i] != -1)
                 {
                     SpecificNode newnode2 = new SpecificNode();
                     newnode2.numero = i;
