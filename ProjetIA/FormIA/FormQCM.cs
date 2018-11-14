@@ -15,15 +15,19 @@ namespace FormIA
         private const string _CHEMIN = "Questionnaire.xml";
         private int i = 0;
         public int scoreFinal = 0;
+        public Questions questions;
+        public Random random = new Random();
+        public int randomChiffre;
+        
 
         public FormQCM()
         {
-            Random random = new Random();
-            int randomChiffre = random.Next(23);
+            randomChiffre = random.Next(23);
+            questions = new Questions();
+            questions = Questions.Charger(_CHEMIN);
 
             InitializeComponent();
-            Questions questions = new Questions();
-            questions = Questions.Charger(_CHEMIN);
+
             lblQ.Text = questions[randomChiffre].Intitule;
             lblAns1.Text = questions[randomChiffre].Reponse1.Intitule;
             lblAns2.Text = questions[randomChiffre].Reponse2.Intitule;
@@ -37,12 +41,13 @@ namespace FormIA
 
             if (i<20)
             {
-                Random random = new Random();
-                int randomChiffre = random.Next(23);
+                questions.RemoveAt(randomChiffre);
+                randomChiffre = random.Next(23-(i+1));
                 //questionsPosées[i] = randomChiffre;
                 
-                Questions questions = new Questions();
-                questions = Questions.Charger(_CHEMIN);
+                //Questions questions = new Questions();
+                //questions = Questions.Charger(_CHEMIN);
+
                 lblQ.Text = questions[randomChiffre].Intitule;
                 lblAns1.Text = questions[randomChiffre].Reponse1.Intitule;
                 lblAns2.Text = questions[randomChiffre].Reponse2.Intitule;
