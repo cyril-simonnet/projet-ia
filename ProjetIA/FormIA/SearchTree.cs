@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
-using System.Threading.Tasks;
+using System;
 
 namespace FormIA
 {
@@ -11,6 +8,8 @@ namespace FormIA
     {
         public List<GenericNode> L_Ouverts;
         public List<GenericNode> L_Fermes;
+        public List<String[]> L_FermesEvolution;
+        public List<String[]> L_OuvertsEvolution;
 
         public int CountInOpenList()
         {
@@ -47,17 +46,36 @@ namespace FormIA
             return null;
         }
 
-        public List<GenericNode> RechercheSolutionAEtoile(GenericNode N0)
+        private string[] ToStringList(List<GenericNode> liste)
         {
+            string[] nodes = new string[liste.Count];
+
+            for (int i = 0; i < liste.Count; i++)
+            {
+                nodes[i] = liste[i].ToLetter();
+            }
+
+            return nodes;
+        }
+
+        public List<GenericNode> RechercheSolutionAEtoile(GenericNode N0, DijkstraAForm form)
+        {
+            int ite = 1;
             L_Ouverts = new List<GenericNode>();
             L_Fermes = new List<GenericNode>();
+            L_OuvertsEvolution = new List<String[]>();
+            L_FermesEvolution = new List<String[]>();
             // Le noeud passé en paramètre est supposé être le noeud initial
             GenericNode N = N0;
             L_Ouverts.Add(N0);
 
+            L_OuvertsEvolution.Add(ToStringList(L_Ouverts));
+            L_FermesEvolution.Add(ToStringList(L_Fermes));
+
             // tant que le noeud n'est pas terminal et que ouverts n'est pas vide
             while (L_Ouverts.Count != 0 && N.EndState() == false)
             {
+                ite++;
                 // Le meilleur noeud des ouverts est supposé placé en tête de liste
                 // On le place dans les fermés
                 L_Ouverts.Remove(N);
@@ -67,17 +85,22 @@ namespace FormIA
                 this.MAJSuccesseurs(N);
                 // Inutile de retrier car les insertions ont été faites en respectant l'ordre
 
+                L_OuvertsEvolution.Add(ToStringList(L_Ouverts));
+                L_FermesEvolution.Add(ToStringList(L_Fermes));
+
                 // On prend le meilleur, donc celui en position 0, pour continuer à explorer les états
                 // A condition qu'il existe bien sûr
-                if (L_Ouverts.Count > 0)
-                {
-                    N = L_Ouverts[0];
-                }
-                else
-                {
-                    N = null;
-                }
+                if (L_Ouverts.Count > 0) { N = L_Ouverts[0]; }
+                else { N = null; }
             }
+            form.SetIterationInputGoal(++ite);
+
+            L_Fermes.Add(N);
+            L_Ouverts.Remove(N);
+            this.MAJSuccesseurs(N);
+
+            L_OuvertsEvolution.Add(ToStringList(L_Ouverts));
+            L_FermesEvolution.Add(ToStringList(L_Fermes));
 
             // A* terminé
             // On retourne le chemin qui va du noeud initial au noeud final sous forme de liste
@@ -184,7 +207,7 @@ namespace FormIA
             // On suppose le TreeView préexistant
             TV.Nodes.Clear();
 
-            TreeNode TN = new TreeNode(L_Fermes[0].ToString());
+            TreeNode TN = new TreeNode(L_Fermes[0].ToLetter());
             TV.Nodes.Add(TN);
 
             AjouteBranche(L_Fermes[0], TN);
@@ -195,10 +218,11 @@ namespace FormIA
         {
             foreach (GenericNode GNfils in GN.GetEnfants())
             {
-                TreeNode TNfils = new TreeNode(GNfils.ToString());
+                TreeNode TNfils = new TreeNode(GNfils.ToLetter());
                 TN.Nodes.Add(TNfils);
                 if (GNfils.GetEnfants().Count > 0) AjouteBranche(GNfils, TNfils);
             }
         }
+
     }
 }
