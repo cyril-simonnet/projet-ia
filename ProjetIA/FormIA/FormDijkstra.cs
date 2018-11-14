@@ -30,29 +30,17 @@ namespace FormIA
 
         private void DijkstraAForm_Load(object sender, EventArgs e)
         {
-            this.answersForm = new FormSearchTree(); // CREER UN NOUVEAU FORM DEPUIS AJOUTER POUR AFFICHER LES REPONSES A DIJKSTRA, LE DESIGNER ET AJOUTER LES INFOS SOUS LE SEP DANS CE FORM.
+            this.answersForm = new FormSearchTree(); // Créé un nouveau formSearchTree
             ReadGraphFile();
             DijkstraASolverIterationDefiner();
-            lbl_Instructions.Text = "Remplissez à la main l'algorithme de Dijkstra pour aller du point " + ((char)(this.numInitial + 65)).ToString() + " au point " + ((char)(numFinal + 65)).ToString() + ".";
+            lbl_Instructions.Text = "Remplissez à la main pour aller du point " + ((char)(this.numInitial + 65)).ToString() + " au point " + ((char)(numFinal + 65)).ToString() + ".";
             tb_OpenedPrevious.Text = g.L_OuvertsEvolution[0][0];
             lbl_IndicationsInput.Text = "Veuillez remplir l'étape " + (this.iteInput + 1) + " de l'algorithme :";
             this.ActiveControl = tb_ClosedRead;
         }
 
         private void ReadGraphFile ()
-        {
-            // Randomisation du choix du fichier et des nodes départ-arrivée
-            /*
-            Random r = new Random();
-            int fileNumber = r.Next(1, 3);
-
-            string graphLocation = "../../graph" + fileNumber + ".txt";
-            string picLocation = "../../graph" + fileNumber + ".png";
-            StreamReader monStreamReader = new StreamReader(graphLocation);
-            this.pb_graph.ImageLocation = picLocation;
-            */
-            /////////////////////////////////////////////////////////////////
-            
+        {            
             // Lecture du fichier
             StreamReader monStreamReader = new StreamReader("../../SujetGraph.txt");
             pb_graph.ImageLocation = "../../SujetGraph.png";
@@ -111,13 +99,6 @@ namespace FormIA
                 ligne = monStreamReader.ReadLine();
             }
 
-            //////////////////////////
-            /*
-            numInitial = r.Next(nbNodes);
-            do { numFinal = r.Next(nbNodes); } while (numFinal == numInitial)
-            */
-            //////////////////////////
-
             monStreamReader.Close();
         }
 
@@ -142,7 +123,6 @@ namespace FormIA
                 {
                     lbl_IndicationsInput.Text = "Fin de l'algorithme.";
                     MessageBox.Show("Dijkstra terminé !");
-                    //return dialog with the grades for the quizz//
                 }
             }
             else { MessageBox.Show("Erreur dans votre proposition !"); }
