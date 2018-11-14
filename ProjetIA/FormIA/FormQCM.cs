@@ -37,16 +37,11 @@ namespace FormIA
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            //int[] questionsPosées = [déterminer la taille de la liste];
 
             if (i<20)
             {
                 questions.RemoveAt(randomChiffre);
                 randomChiffre = random.Next(23-(i+1));
-                //questionsPosées[i] = randomChiffre;
-                
-                //Questions questions = new Questions();
-                //questions = Questions.Charger(_CHEMIN);
 
                 lblQ.Text = questions[randomChiffre].Intitule;
                 lblAns1.Text = questions[randomChiffre].Reponse1.Intitule;
