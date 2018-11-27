@@ -23,7 +23,7 @@ namespace FormIA
             if (File.Exists(_CHEMIN) == false)
             {
                 Questions questions = new Questions();
-                //Étapes ici.
+                //Étapes ici
                 questions.Add(new Question(1, "La différence entre IA faible et IA forte est d’ordre :", new Reponse(1, "Technique : l’IA faible est moins aboutie que l’IA forte", false), new Reponse(2, "Technique : l’IA faible est plus aboutie que l’IA forte", false), new Reponse(3, "Conceptuelle : ce sont deux façons de concevoir l’IA", true), new Reponse(4, "Il n’y a aucune différence, ces termes désignent la même chose", false)));
                 questions.Add(new Question(2, "Dans le cadre d'un graphe non orienté, la matrice d'adjacence est :", new Reponse(1, "Asymétrique", false), new Reponse(2, "Symétrique", true), new Reponse(3, "Ne peut pas être déterminée", false), new Reponse(4, "Similaire à celle d'un graphe orienté", false)));
                 questions.Add(new Question(3, "Dans la théorie des jeux, un des principes de base est :", new Reponse(1, "De supposer que l’adversaire joue de façon optimale", true), new Reponse(2, "De supposer que le nombre de coups possibles est fini", false), new Reponse(3, "De descendre progressivement dans l'arborescence des coups possibles", false), new Reponse(4, "De supposer que l’adversaire va faire des erreurs", false)));

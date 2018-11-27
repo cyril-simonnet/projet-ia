@@ -12,27 +12,27 @@ namespace FormIA
 {
     public partial class FormQCM : Form
     {
-        private const string _CHEMIN = "Questionnaire.xml";
-        private int i = 0;
-        public int scoreFinal = 0;
-        public Questions questions;
+        private const string _CHEMIN = "Questionnaire.xml"; //accès au fichier XML
+        private int i = 0; //compteur pour affichage des questions
+        public int scoreFinal = 0; //variable contenant le score du joueur au fil des questions
+        public Questions questions; //créé une nouvelle liste de Question
         public Random random = new Random();
         public int randomChiffre;
         
 
         public FormQCM()
         {
-            randomChiffre = random.Next(23);
+            randomChiffre = random.Next(23); //nouveau random pour l'affichage des 23 questions possibles
             questions = new Questions();
-            questions = Questions.Charger(_CHEMIN);
+            questions = Questions.Charger(_CHEMIN); //chargement de la liste de questions
 
             InitializeComponent();
 
-            lblQ.Text = questions[randomChiffre].Intitule;
-            lblAns1.Text = questions[randomChiffre].Reponse1.Intitule;
-            lblAns2.Text = questions[randomChiffre].Reponse2.Intitule;
-            lblAns3.Text = questions[randomChiffre].Reponse3.Intitule;
-            lblAns4.Text = questions[randomChiffre].Reponse4.Intitule;
+            lblQ.Text = questions[randomChiffre].Intitule; //affiche l'intitulé d'une question en aléatoire
+            lblAns1.Text = questions[randomChiffre].Reponse1.Intitule; //affiche la réponse 1 de la question aléatoire
+            lblAns2.Text = questions[randomChiffre].Reponse2.Intitule; //affiche la réponse 2 de la question aléatoire
+            lblAns3.Text = questions[randomChiffre].Reponse3.Intitule; //affiche la réponse 3 de la question aléatoire
+            lblAns4.Text = questions[randomChiffre].Reponse4.Intitule; //affiche la réponse 4 de la question aléatoire
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -40,10 +40,10 @@ namespace FormIA
 
             if (i<20)
             {
-                questions.RemoveAt(randomChiffre);
+                questions.RemoveAt(randomChiffre); //à chaque fois qu'une question est posée, elle est retirée de la liste des possibles
                 randomChiffre = random.Next(23-(i+1));
 
-                lblQ.Text = questions[randomChiffre].Intitule;
+                lblQ.Text = questions[randomChiffre].Intitule; //nouvel affichage de question et de ses réponses
                 lblAns1.Text = questions[randomChiffre].Reponse1.Intitule;
                 lblAns2.Text = questions[randomChiffre].Reponse2.Intitule;
                 lblAns3.Text = questions[randomChiffre].Reponse3.Intitule;
@@ -51,6 +51,7 @@ namespace FormIA
 
                 i++;
 
+                //vérifications du résultat de la question et incrémentation du score final en fonction
                 if((rbAns1.Checked == true) && (questions[randomChiffre].Reponse1.Value == true))
                 {
                     scoreFinal++;
@@ -72,7 +73,7 @@ namespace FormIA
                 }
             }
             
-            else
+            else //affichage du message box avec possibilité de recommencer et affichage du score final
             {
                 string message = "Votre score final est de " + scoreFinal + " !\nSi vous voulez recommencer, cliquez sur 'Recommencer'.\nSi vous voulez retourner à la page d'accueil, cliquez sur 'Annuler'.";
                 string caption = "Résultat final";

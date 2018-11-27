@@ -13,23 +13,24 @@ namespace FormIA
         protected GenericNode ParentNode;     // noeud parent
         protected List<GenericNode> Enfants;  // noeuds enfants
 
-        public GenericNode()
+        public GenericNode() //noeud générique de base
         {
             ParentNode = null;
             Enfants = new List<GenericNode>();
         }
 
 
-        public double GetGCost()
+        public double GetGCost() //reourne la valeur du chemin du noeud initial jusqu'à un noeud
         {
             return GCost;
         }
 
-        public void SetGCost(double g)
+        public void SetGCost(double g) //déinfi une valeur g de chemin du noeud initial jusqu'à un noeud
         {
             GCost = g;
         }
 
+        //méthodes get set pour les noeuds parents et enfants
         public double Cout_Total
         {
             get { return TotalCost; }
@@ -52,20 +53,21 @@ namespace FormIA
             g.Enfants.Add(this);
         }
 
-        public void Supprime_Liens_Parent()
+
+        public void Supprime_Liens_Parent() //supprime les liens entre parents et enfants
         {
             if (ParentNode == null) return;
             ParentNode.Enfants.Remove(this);
             ParentNode = null;
         }
 
-        public void calculCoutTotal()
+        public void calculCoutTotal() //calule le coût total d'un chemin d'un point à un autre
         {
             HCost = CalculeHCost();
             TotalCost = GCost + HCost;
         }
 
-        public void RecalculeCoutTotal()
+        public void RecalculeCoutTotal() //permet de comparer les coût totaux de plusieurs chemins
         {
             TotalCost = GCost + HCost;
         }

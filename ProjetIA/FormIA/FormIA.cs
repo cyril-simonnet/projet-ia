@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace FormIA
 {
-    public partial class FormIA : Form
+    public partial class FormIA : Form //form principal, plateforme d'accueuil du reste des exercices possibles
     {
         public FormIA()
         {
@@ -19,19 +19,19 @@ namespace FormIA
 
         private void btnQCM_Click(object sender, EventArgs e)
         {
-            FormQCM qcm = new FormQCM();           
+            FormQCM qcm = new FormQCM(); //démarre un nouveau QCM
             qcm.Show();
         }
 
         private void btnDijkstra_Click(object sender, EventArgs e)
         {
-            FormDijkstra dijkstra = new FormDijkstra();
+            FormDijkstra dijkstra = new FormDijkstra(); //démarre un nouveau Dijkstra
             dijkstra.Show();
         }
 
         private void btQuit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); //ferme l'application
         }
     }
 }

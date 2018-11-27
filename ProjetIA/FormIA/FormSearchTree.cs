@@ -19,14 +19,13 @@ namespace FormIA
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing) { e.Cancel = true; this.Hide(); }
+            if (e.CloseReason == CloseReason.UserClosing) { e.Cancel = true; this.Hide(); } //ferme le form si on appuie sur la croix
             base.OnFormClosing(e);
         }
 
-        public void AddLbDijkstraSolvedItem(string item) { lb_DijkstraSolved.Items.Add(item); }
-        //public void AddLbFermesGrapheItem(string item) { lb_FermesGraphe.Items.Add(item); }
-        //public void AddLbOuvertsGrapheItem(string item) { lb_OuvertsGraphe.Items.Add(item); }
-        public TreeView GetTv() { return tv_DijkstraSolved; }
+        public void AddLbDijkstraSolvedItem(string item) { lb_DijkstraSolved.Items.Add(item); } //ajoute les items justes à la solution valide
+
+        public TreeView GetTv() { return tv_DijkstraSolved; } //récupère et affiche la vue treeview de l'arbre correct
 
     }
 }

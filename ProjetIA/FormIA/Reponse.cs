@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 namespace FormIA
 {
     [Serializable]
-    public class Reponse
+    public class Reponse //une réponse possède un intitulé, un numéro et une valeur (vraie ou fausse)
     {
         [XmlAttribute()]
         public int Num { get; set; }
@@ -22,7 +22,6 @@ namespace FormIA
 
         public Reponse()
         {
-
         }
 
         public Reponse(int num, string intitule, bool value)

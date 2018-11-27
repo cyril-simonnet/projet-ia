@@ -6,21 +6,22 @@ namespace FormIA
 {
     class SearchTree
     {
-        public List<GenericNode> L_Ouverts;
-        public List<GenericNode> L_Fermes;
-        public List<String[]> L_FermesEvolution;
-        public List<String[]> L_OuvertsEvolution;
+        public List<GenericNode> L_Ouverts; //liste de noeuds ouverts
+        public List<GenericNode> L_Fermes; //liste de noeuds fermés
+        public List<String[]> L_FermesEvolution; //liste des noeuds passés en fermé
+        public List<String[]> L_OuvertsEvolution; //liste des noeuds passés en ouvert
 
-        public int CountInOpenList()
+        public int CountInOpenList() //retourne le nombre de noeuds ouverts
         {
             return L_Ouverts.Count;
         }
-        public int CountInClosedList()
+
+        public int CountInClosedList() //retourne le nombre de noeuds fermés
         {
             return L_Fermes.Count;
         }
 
-        private GenericNode ChercheNodeDansFermes(GenericNode N2)
+        private GenericNode ChercheNodeDansFermes(GenericNode N2) //méthode pour chercher un noeud spécifique parmi les fermés
         {
             int i = 0;
 
@@ -33,7 +34,7 @@ namespace FormIA
             return null;
         }
 
-        private GenericNode ChercheNodeDansOuverts(GenericNode N2)
+        private GenericNode ChercheNodeDansOuverts(GenericNode N2) //méthode pour chercher un noeud spécifique parmi les ouverts
         {
             int i = 0;
 

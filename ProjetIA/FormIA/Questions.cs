@@ -9,12 +9,12 @@ using System.Xml.Serialization;
 namespace FormIA
 {
     [Serializable()]
-    public class Questions : List<Question>     //On hérite d'une liste de personnes.
+    public class Questions : List<Question>     //La classe Questions est une liste de Question.
     {        
         // <summary>
         // Enregistre l'état courant de la classe dans un fichier au format XML.
         // </summary>
-        // <param name="chemin"></param>
+
         public void Enregistrer(string chemin)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Questions));

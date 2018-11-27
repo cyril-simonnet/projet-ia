@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 namespace FormIA
 {
     [Serializable]
-    public class Question
+    public class Question //une question correspond à un ensemble : intitulé + 4 réponses, dont une seule sera bonne
     {
         [XmlAttribute()]
         public int Num { get; set; }
