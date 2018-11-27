@@ -5,7 +5,6 @@ C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormI
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.FormQCM.resources
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.Properties.Resources.resources
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csproj.GenerateResource.Cache
-C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.csproj.CoreCompileInputs.cache
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.exe
 C:\Users\evagu\Documents\GitHub\projet-ia\ProjetIA\FormIA\obj\Debug\FormIA.pdb
 C:\Users\cyril\Desktop\Projets Visual Studio\projet-ia\ProjetIA\FormIA\bin\Debug\FormIA.exe.config
