@@ -22,9 +22,9 @@ namespace FormIA
 
         public FormQCM()
         {
-            randomChiffre = random.Next(questions.Count); //nouveau random pour l'affichage des 23 questions possibles
             questions = new Questions();
             questions = Questions.Charger(_CHEMIN); //chargement de la liste de questions
+            randomChiffre = random.Next(questions.Count); //nouveau random pour l'affichage des 23 questions possibles
 
             InitializeComponent();
 
@@ -38,10 +38,10 @@ namespace FormIA
         private void btnNext_Click(object sender, EventArgs e)
         {
 
-            if (i<20)
+            if (i<19)
             {
                 questions.RemoveAt(randomChiffre); //à chaque fois qu'une question est posée, elle est retirée de la liste des possibles
-                randomChiffre = random.Next(questions.Count-(i+1));
+                randomChiffre = random.Next(questions.Count-1);
 
                 lblQ.Text = questions[randomChiffre].Intitule; //nouvel affichage de question et de ses réponses
                 lblAns1.Text = questions[randomChiffre].Reponse1.Intitule;
