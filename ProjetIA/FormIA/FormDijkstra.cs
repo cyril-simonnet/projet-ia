@@ -13,15 +13,15 @@ namespace FormIA
 {
     public partial class FormDijkstra : Form
     {
-        static public int[,] matrice; //matrice contenant l'arbre des possibles
-        static public int nbNodes;
-        static public int numFinal;
-        private int numInitial;
+        static public int[,] matrice; // matrice contenant l'arbre des possibles
+        static public int nbNodes; // nombre de noeuds
+        static public int numFinal; // numéro final de l'arbre
+        private int numInitial; // numéro initial de l'arbre
         private string[] sep = { " " };
         private int iteInput = 1;
         private int iteInputGoal = -1;
         private SearchTree g; //nouveau searchtree
-        private FormSearchTree answersForm; //nouveau from affichant la vision searchtree
+        private FormSearchTree answersForm; //nouveau form affichant la vision searchtree
 
         public FormDijkstra()
         {
