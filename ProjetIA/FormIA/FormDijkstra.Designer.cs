@@ -124,7 +124,7 @@
             // bt_ClosedOpenRead
             // 
             this.bt_ClosedOpenRead.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ClosedOpenRead.Location = new System.Drawing.Point(446, 535);
+            this.bt_ClosedOpenRead.Location = new System.Drawing.Point(453, 595);
             this.bt_ClosedOpenRead.Margin = new System.Windows.Forms.Padding(3, 4, 3, 28);
             this.bt_ClosedOpenRead.Name = "bt_ClosedOpenRead";
             this.bt_ClosedOpenRead.Size = new System.Drawing.Size(115, 34);
@@ -146,11 +146,11 @@
             // lbl_Correctness
             // 
             this.lbl_Correctness.AutoSize = true;
-            this.lbl_Correctness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Correctness.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Correctness.Location = new System.Drawing.Point(90, 533);
             this.lbl_Correctness.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Correctness.Name = "lbl_Correctness";
-            this.lbl_Correctness.Size = new System.Drawing.Size(0, 13);
+            this.lbl_Correctness.Size = new System.Drawing.Size(0, 19);
             this.lbl_Correctness.TabIndex = 13;
             // 
             // lbl_Instructions
@@ -166,7 +166,7 @@
             // btnSearchT
             // 
             this.btnSearchT.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchT.Location = new System.Drawing.Point(23, 535);
+            this.btnSearchT.Location = new System.Drawing.Point(18, 595);
             this.btnSearchT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchT.Name = "btnSearchT";
             this.btnSearchT.Size = new System.Drawing.Size(197, 34);
@@ -182,17 +182,17 @@
             this.lblBienvenueDij.Name = "lblBienvenueDij";
             this.lblBienvenueDij.Size = new System.Drawing.Size(554, 91);
             this.lblBienvenueDij.TabIndex = 19;
-            this.lblBienvenueDij.Text = "Bienvenue dans cet algorithme de Dijkstra ! Essayes de trouver le meilleur chemin" +
-    ", étape par étape...";
+            this.lblBienvenueDij.Text = "Bienvenue dans cet algorithme de Dijkstra ! Essaye de trouver le meilleur chemin," +
+    " étape par étape...";
             this.lblBienvenueDij.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_IndicationsInput
             // 
             this.lbl_IndicationsInput.AutoSize = true;
-            this.lbl_IndicationsInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_IndicationsInput.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_IndicationsInput.Location = new System.Drawing.Point(321, 300);
             this.lbl_IndicationsInput.Name = "lbl_IndicationsInput";
-            this.lbl_IndicationsInput.Size = new System.Drawing.Size(0, 13);
+            this.lbl_IndicationsInput.Size = new System.Drawing.Size(0, 19);
             this.lbl_IndicationsInput.TabIndex = 14;
             // 
             // FormDijkstra
@@ -202,7 +202,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(582, 586);
+            this.ClientSize = new System.Drawing.Size(582, 642);
             this.Controls.Add(this.lblBienvenueDij);
             this.Controls.Add(this.btnSearchT);
             this.Controls.Add(this.lbl_Instructions);
