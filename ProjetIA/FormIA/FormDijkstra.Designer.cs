@@ -51,7 +51,7 @@
             this.tb_ClosedRead.Location = new System.Drawing.Point(327, 370);
             this.tb_ClosedRead.Margin = new System.Windows.Forms.Padding(3, 4, 23, 4);
             this.tb_ClosedRead.Name = "tb_ClosedRead";
-            this.tb_ClosedRead.Size = new System.Drawing.Size(234, 27);
+            this.tb_ClosedRead.Size = new System.Drawing.Size(234, 32);
             this.tb_ClosedRead.TabIndex = 3;
             // 
             // tb_OpenedRead
@@ -59,7 +59,7 @@
             this.tb_OpenedRead.Location = new System.Drawing.Point(327, 468);
             this.tb_OpenedRead.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_OpenedRead.Name = "tb_OpenedRead";
-            this.tb_OpenedRead.Size = new System.Drawing.Size(234, 27);
+            this.tb_OpenedRead.Size = new System.Drawing.Size(234, 32);
             this.tb_OpenedRead.TabIndex = 4;
             this.tb_OpenedRead.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnKeyDownHandler);
             // 
@@ -69,7 +69,7 @@
             this.tb_ClosedPrevious.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_ClosedPrevious.Name = "tb_ClosedPrevious";
             this.tb_ClosedPrevious.ReadOnly = true;
-            this.tb_ClosedPrevious.Size = new System.Drawing.Size(234, 27);
+            this.tb_ClosedPrevious.Size = new System.Drawing.Size(234, 32);
             this.tb_ClosedPrevious.TabIndex = 5;
             // 
             // tb_OpenedPrevious
@@ -78,7 +78,7 @@
             this.tb_OpenedPrevious.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_OpenedPrevious.Name = "tb_OpenedPrevious";
             this.tb_OpenedPrevious.ReadOnly = true;
-            this.tb_OpenedPrevious.Size = new System.Drawing.Size(234, 27);
+            this.tb_OpenedPrevious.Size = new System.Drawing.Size(234, 32);
             this.tb_OpenedPrevious.TabIndex = 6;
             // 
             // lbl_ClosedPrevious
@@ -87,7 +87,7 @@
             this.lbl_ClosedPrevious.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ClosedPrevious.Location = new System.Drawing.Point(22, 338);
             this.lbl_ClosedPrevious.Name = "lbl_ClosedPrevious";
-            this.lbl_ClosedPrevious.Size = new System.Drawing.Size(122, 19);
+            this.lbl_ClosedPrevious.Size = new System.Drawing.Size(151, 24);
             this.lbl_ClosedPrevious.TabIndex = 7;
             this.lbl_ClosedPrevious.Text = " Fermés (précédent)";
             // 
@@ -97,7 +97,7 @@
             this.lbl_ClosedRead.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ClosedRead.Location = new System.Drawing.Point(322, 338);
             this.lbl_ClosedRead.Name = "lbl_ClosedRead";
-            this.lbl_ClosedRead.Size = new System.Drawing.Size(50, 19);
+            this.lbl_ClosedRead.Size = new System.Drawing.Size(59, 24);
             this.lbl_ClosedRead.TabIndex = 8;
             this.lbl_ClosedRead.Text = "Fermés";
             // 
@@ -107,7 +107,7 @@
             this.lbl_OpenedPrevious.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_OpenedPrevious.Location = new System.Drawing.Point(23, 436);
             this.lbl_OpenedPrevious.Name = "lbl_OpenedPrevious";
-            this.lbl_OpenedPrevious.Size = new System.Drawing.Size(121, 19);
+            this.lbl_OpenedPrevious.Size = new System.Drawing.Size(151, 24);
             this.lbl_OpenedPrevious.TabIndex = 9;
             this.lbl_OpenedPrevious.Text = "Ouverts (précédent)";
             // 
@@ -117,7 +117,7 @@
             this.lbl_OpenedRead.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_OpenedRead.Location = new System.Drawing.Point(322, 436);
             this.lbl_OpenedRead.Name = "lbl_OpenedRead";
-            this.lbl_OpenedRead.Size = new System.Drawing.Size(53, 19);
+            this.lbl_OpenedRead.Size = new System.Drawing.Size(65, 24);
             this.lbl_OpenedRead.TabIndex = 10;
             this.lbl_OpenedRead.Text = "Ouverts";
             // 
@@ -135,7 +135,7 @@
             // 
             // pb_graph
             // 
-            this.pb_graph.Location = new System.Drawing.Point(43, 107);
+            this.pb_graph.Location = new System.Drawing.Point(43, 129);
             this.pb_graph.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pb_graph.Name = "pb_graph";
             this.pb_graph.Size = new System.Drawing.Size(486, 190);
@@ -150,7 +150,7 @@
             this.lbl_Correctness.Location = new System.Drawing.Point(90, 533);
             this.lbl_Correctness.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Correctness.Name = "lbl_Correctness";
-            this.lbl_Correctness.Size = new System.Drawing.Size(0, 19);
+            this.lbl_Correctness.Size = new System.Drawing.Size(0, 24);
             this.lbl_Correctness.TabIndex = 13;
             // 
             // lbl_Instructions
@@ -160,7 +160,7 @@
             this.lbl_Instructions.Location = new System.Drawing.Point(194, 66);
             this.lbl_Instructions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Instructions.Name = "lbl_Instructions";
-            this.lbl_Instructions.Size = new System.Drawing.Size(0, 13);
+            this.lbl_Instructions.Size = new System.Drawing.Size(0, 17);
             this.lbl_Instructions.TabIndex = 16;
             // 
             // btnSearchT
@@ -192,12 +192,12 @@
             this.lbl_IndicationsInput.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_IndicationsInput.Location = new System.Drawing.Point(321, 300);
             this.lbl_IndicationsInput.Name = "lbl_IndicationsInput";
-            this.lbl_IndicationsInput.Size = new System.Drawing.Size(0, 19);
+            this.lbl_IndicationsInput.Size = new System.Drawing.Size(0, 24);
             this.lbl_IndicationsInput.TabIndex = 14;
             // 
             // FormDijkstra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

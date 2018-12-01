@@ -31,19 +31,19 @@ namespace FormIA
         private void DijkstraAForm_Load(object sender, EventArgs e)
         {
             this.answersForm = new FormSearchTree(); // Créé un nouveau formSearchTree
-            ReadGraphFile();
+            ReadGraphFile("../../SujetGraph.png", "../../SujetGraph.txt");
             DijkstraASolverIterationDefiner();
             lbl_Instructions.Text = "Allez du point A au point E.";
             tb_OpenedPrevious.Text = g.L_OuvertsEvolution[0][0];
             lbl_IndicationsInput.Text = "Etape " + (this.iteInput + 1) + " de l'algorithme :";
             this.ActiveControl = tb_ClosedRead;
         }
-
-        private void ReadGraphFile ()
+        
+        private void ReadGraphFile (string locationIm, string locationTxt)
         {            
             // Lecture du fichier
-            StreamReader monStreamReader = new StreamReader("../../SujetGraph.txt");
-            pb_graph.ImageLocation = "../../SujetGraph.png";
+            StreamReader monStreamReader = new StreamReader(locationTxt);
+            pb_graph.ImageLocation = locationIm;
             numInitial = 0; numFinal = 4;
 
             // 1ère ligne : nombre de noeuds du graphe
